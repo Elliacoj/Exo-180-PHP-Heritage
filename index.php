@@ -1,5 +1,9 @@
 <?php
 
+require "./classes/Habitation.php";
+require "./classes/Maison.php";
+require "./classes/Appartement.php";
+
 /**
  * 1. Créez une classe Habitation, elle contiendra les propriétés:
  *    - pays ( string )
@@ -34,3 +38,40 @@
  *
  * 5. Créez une instance de Appartement et invoquez toutes les méthodes définies, y compris les setters ( dans index.php ).
  */
+
+$maison1 = new Maison("Belgique", "Momignies", "6590", "3", "7", true, "2", false);
+$maison2 = new Maison("Belgique", "Momignies", "6590", "3", "7", false, "2", true);
+
+echo $maison1->getPays() . "<br>";
+echo $maison1->getVille() . "<br>";
+echo $maison1->getCodePostal() . "<br>";
+echo $maison1->getChambre() . "<br>";
+echo $maison1->getPiece() . "<br>";
+echo $maison1->hasJardin() . "<br>";
+echo $maison1->getEtage() . "<br>";
+echo $maison1->hasGarage() . "<br>";
+
+echo $maison2->getPays() . "<br>";
+echo $maison2->getVille() . "<br>";
+echo $maison2->getCodePostal() . "<br>";
+echo $maison2->getChambre() . "<br>";
+echo $maison2->getPiece() . "<br>";
+echo $maison2->hasJardin() . "<br>";
+echo $maison2->getEtage() . "<br>";
+echo $maison2->hasGarage() . "<br>";
+
+$appartement1 = new Appartement("Belgique", "Momignies", "6590", "3", "7", true);
+
+$appartement1->setPays("France");
+$appartement1->setVille("Paris");
+$appartement1->setCodePostal(13900);
+$appartement1->setChambre(3);
+$appartement1->setPiece(5);
+$appartement1->setGarage(False);
+
+echo $appartement1->getPays() . "<br>";
+echo $appartement1->getVille() . "<br>";
+echo $appartement1->getCodePostal() . "<br>";
+echo $appartement1->getChambre() . "<br>";
+echo $appartement1->getPiece() . "<br>";
+echo $appartement1->hasGarage() . "<br>";
