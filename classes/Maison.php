@@ -73,6 +73,4 @@ class Maison extends Habitation
     {
         $this->garage = $garage;
     }
-
-
 }

@@ -35,6 +35,4 @@ class Appartement extends Habitation
     {
         $this->garage = $garage;
     }
-
-
 }

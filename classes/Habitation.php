@@ -105,6 +105,4 @@ class Habitation
     {
         $this->piece = $piece;
     }
-
-
 }
